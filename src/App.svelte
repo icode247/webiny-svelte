@@ -12,7 +12,7 @@
     cache: new InMemoryCache(),
     uri: "https://d33ip4f514s3iy.cloudfront.net/cms/read/en-US",
     headers: {
-      Authorization: `Bearer a65bc94d4d3ae90711af1c46491d33c2dbe2a8ff15c9c8f2`,
+      Authorization: `Bearer <API KEY>`,
     },
   });
   setClient(client);
@@ -59,9 +59,7 @@
       {/await}
     </CardLayout>
 
-    <!-- Pagination -->
     <div class="pagination">
-      <!-- Shows numbered pages-->
       <LightPaginationNav
         totalItems={items.length}
         {pageSize}
@@ -71,7 +69,6 @@
         on:setPage={(e) => (currentPage = e.detail.page)}
       />
 
-      <!-- Shows prev/next text -->
       <div class="pagination_nav">
         <PaginationNav
           totalItems={items.length}
