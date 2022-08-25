@@ -6,7 +6,6 @@
   <img src={item.coverImage} alt="" class="img-fluid">
   <h3 class="__title">{item.title}</h3>
   <p class="__text">
-    <!-- {item.body.substring(0, 80)} -->
     quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum.
   </p>
   <a href="/">Read more</a> 
